@@ -12,5 +12,6 @@ int main() {
   s = quad;
   std::cout << s << std::endl;
 
+  std::getchar();
   return 0;
 }

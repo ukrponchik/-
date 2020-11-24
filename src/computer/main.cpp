@@ -8,5 +8,6 @@ int main() {
   m.data();
   r.data();
 
+  std::getchar();
   return 0;
 }

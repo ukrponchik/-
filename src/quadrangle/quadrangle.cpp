@@ -32,7 +32,7 @@ std::istream &operator>>(std::istream &is, Quadrangle &quad) {
   return is;
 }
 
-Square::Square(vdouble sides) : Quadrangle(sides, vdouble{90, 90, 90, 90}) {}
+Square::Square(vdouble sides) : Quadrangle(sides, vdouble{90, 90}) {}
 
 Square::Square(const Square &square)
     : Quadrangle(square.sides, square.angles) {}
@@ -71,8 +71,6 @@ const Square &Square::operator=(const Quadrangle &quad) {
   this->sides[1] = quad.top();
 
   this->angles[0] = this->angles[1] = 90;
-  this->angles.pop_back();
-  this->angles.pop_back();
   return *this;
 }
 

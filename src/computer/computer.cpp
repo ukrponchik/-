@@ -20,7 +20,7 @@ Computer::~Computer() { delete[] brand; }
 
 void Computer::data() const {
   std::cout << "drive: " << drive.getSize() << "\tbrand: " << brand
-            << "\tprice: " << std::endl;
+            << "\tprice: " << price << std::endl;
 }
 
 SIZE::SIZE(unsigned int height, unsigned int width)

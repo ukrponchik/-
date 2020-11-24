@@ -12,5 +12,7 @@ int main()
     context.field(LINE::Default);
     context.Show();
 
+    std::getchar();
+
     return 0;
 }
